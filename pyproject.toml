@@ -16,3 +16,6 @@ dependencies = [
 [project.scripts]
 pr = "uu_app.main:main"
 password-remover = "uu_app.main:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/uu_app"]
