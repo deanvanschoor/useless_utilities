@@ -1,4 +1,4 @@
-from config import BASE_DIR, YAML_CONFIG , APP_FOLDER , APP_DIR
+from .config import BASE_DIR, YAML_CONFIG , APP_FOLDER , APP_DIR
 import logging
 import shutil
 from pathlib import Path

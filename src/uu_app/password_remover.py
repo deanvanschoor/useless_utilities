@@ -1,10 +1,11 @@
-from config import APP_DIR
+from .config import APP_DIR
+from .yaml_interactor import fetch_yaml
 import msoffcrypto
 import os
 import tempfile
 from pathlib import Path
 import logging
-from yaml_interactor import fetch_yaml
+
 
 logger = logging.getLogger(__name__)
 
