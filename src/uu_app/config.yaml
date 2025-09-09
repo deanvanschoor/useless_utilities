@@ -1,0 +1,15 @@
+app:
+  name: useless_utilities
+  version: 0.1
+  purpose: This yaml acts as a config for all utilities within application
+  test: test
+
+password_remover:
+  version: 0.1
+  purpose: |
+    Remove password from an xlsx file using a standard list of passwords,
+    Passwords should be added to passwords list below.
+  alias: pr
+  passwords:
+    - '1234'
+    - '5678'
