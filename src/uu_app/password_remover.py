@@ -66,6 +66,5 @@ def password_remover(path):
                 break  # Stop trying other passwords for this file
             continue
  
-#path = "D:\Projects\utilities\dev\*.xlsx"  # input into function
 
     

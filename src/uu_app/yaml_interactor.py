@@ -1,4 +1,4 @@
-from .config import BASE_DIR, YAML_CONFIG, APP_DIR
+from .config import YAML_CONFIG, APP_DIR
 from pathlib import Path
 import logging
 import yaml
@@ -7,7 +7,7 @@ import yaml
 #setup logger
 logger = logging.getLogger(__name__)
 
-def fetch_yaml(dir: Path, yaml_file: str = YAML_CONFIG) -> dict :
+def fetch_yaml(dir: Path = APP_DIR, yaml_file: str = YAML_CONFIG) -> dict :
     """
     Load and return YAML data from a specified file.
 

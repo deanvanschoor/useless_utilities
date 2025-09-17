@@ -2,6 +2,7 @@ from .config import BASE_DIR, YAML_CONFIG , APP_FOLDER , APP_DIR
 import logging
 import shutil
 from pathlib import Path
+import sys
 
 logger = logging.getLogger(__name__)
 
@@ -38,6 +39,9 @@ def setup_app() -> None:
         dest_dir = APP_DIR / YAML_CONFIG
         shutil.copy(PACKAGE_CONFIG, dest_dir)
         logger.info(f"Copied default config.yaml to {dest_dir}")
+        print(f"No config was detected.\nConfig has been created at {dest_dir} - Please update this file and try again")
+        logger.info("Application Exits")
+        sys.exit(0)
         
    
         

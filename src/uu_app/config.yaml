@@ -2,7 +2,6 @@ app:
   name: useless_utilities
   version: 0.1
   purpose: This yaml acts as a config for all utilities within application
-  test: test
 
 password_remover:
   version: 0.1
@@ -13,3 +12,13 @@ password_remover:
   passwords:
     - '1234'
     - '5678'
+
+run_sql_scripts:
+  version: 0.1
+  purpose: Runs all sql scripts in folder in order
+  alias: rs
+  server_connection:
+    server: localhost
+    port: 1433
+    database: test_db
+    user: test_user

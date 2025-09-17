@@ -3,12 +3,14 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "utilities"
+name = "uu_app"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "chardet>=5.2.0",
+    "keyring>=25.6.0",
     "msoffcrypto-tool>=5.4.2",
     "pyyaml>=6.0.2",
 ]
@@ -16,6 +18,10 @@ dependencies = [
 [project.scripts]
 pr = "uu_app.main:main"
 password-remover = "uu_app.main:main"
+rs = "uu_app.main:run_sql"
 
 [tool.hatch.build.targets.wheel]
+#packages = ["uu_app"]
+#sources = ["src"]
 packages = ["src/uu_app"]
+#packages = ["src"]
