@@ -102,5 +102,3 @@ def run_sql_scripts(path):
 
     print(f"\n{sql_dir.name}>>All scripts ran successfully!")
     return True
-
-run_sql_scripts(r"R:\Existing Reporting\Reporting\ETL - Transformation Queries\London and South S1")

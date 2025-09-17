@@ -21,7 +21,4 @@ password-remover = "uu_app.main:main"
 rs = "uu_app.main:run_sql"
 
 [tool.hatch.build.targets.wheel]
-#packages = ["uu_app"]
-#sources = ["src"]
 packages = ["src/uu_app"]
-#packages = ["src"]
